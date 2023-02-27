@@ -71,8 +71,9 @@ function myFunction(element){
 
 <p>Our sandboxed environment is perfect for running in a container, on bare metal,
 or in the cloud environment of your choice.
-Our optimized and secure static binaries run on 
-<nobr>EL8+,</nobr> <nobr>Ubuntu 20.04+</nobr>, <nobr>Debian 10+</nobr>
+Our optimized and secure static binaries run on popular amd64 & arm64 Linux platforms including
+<nobr>EL8+,</nobr> <nobr>Ubuntu 20.04+</nobr>, <nobr>Debian 10+</nobr>.  
+We also support OSX arm64 as a development environment.</nobr>
 
 
 <p>&nbsp;
@@ -86,7 +87,7 @@ Our optimized and secure static binaries run on
 <tr><td colspan=3>&nbsp;</td></tr>
 <tr><td width=200 align=right><p><b>Usage sample:</b></td>
     <td width=375><input id=sample type='text' size=78
-      value='cd pgedge; ./nc install pg15 --start' readonly='readonly' />
+      value='cd pgedge; ./nc install pg15 --start; ./nc install spock; ./nc tune' readonly='readonly' />
     </td>
     <td width=50><button onclick="myFunction('sample')">Copy</button></td>
 </tr>
@@ -98,7 +99,7 @@ Our optimized and secure static binaries run on
 <ul>
   <li>Install as a non-root user from your $HOME directory<br>&nbsp;</li>
   <li>Checkout our <a href="tutorial.html">tutorial</a> for more info on
-      how to use the <code>nc</code> (nodectl) CLI<br>&nbsp;</li>
+	  how to use the <code>nodectl</code> CLI<br>&nbsp;</li>
   <li>We are tested with Python Python 3.6+<br>&nbsp;
   </li>
 </ul>

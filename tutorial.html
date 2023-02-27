@@ -5,7 +5,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script>
-function copyToClipboard(text) {
+funodectltion copyToClipboard(text) {
     var sampleTextarea = document.createElement("textarea");
     document.body.appendChild(sampleTextarea);
     sampleTextarea.value = text;
@@ -14,7 +14,7 @@ function copyToClipboard(text) {
     document.body.removeChild(sampleTextarea);
 }
 
-function myFunction(element){
+funodectltion myFunodectltion(element){
     var copyText = document.getElementById(element);
     copyToClipboard(copyText.value);
 }
@@ -73,9 +73,9 @@ Get into the <code>pgedge</code> base directory at the command line.
 <p>Now run the <code>help</code> command to see that things are as expected
 <pre>
 
-   <font size=+1>$ ./nc help</font>
+   <font size=+1>$ ./nodectl help</font>
 
-      <b>Usage:</b> nc command [component1]
+      <b>Usage:</b> nodectl command [component1]
 
       <b>Available commands:</b>
         <b>help</b>       - Show this help file
@@ -94,18 +94,18 @@ Get into the <code>pgedge</code> base directory at the command line.
 
 
 <br>
-<h4>2.) Demonstrate the <code>nc</code> command line environment.</h4>
+<h4>2.) Demonstrate the <code>nodectl</code> command line environment.</h4>
 
 The <code>info</code> command lists information about the OS or a component
 <pre>
-   <font size=+1>$ ./nc info</font>
+   <font size=+1>$ ./nodectl info</font>
 
       <b>User & Host:</b> denisl  localhost  127.0.0.1
       <b>         Os:</b> Linux EL8 x64
       <b>   Hardware:</b> 16 GB, 8 x Intel Core i7-2820QM @ 2.30GHz
 
 
-   <font size=+1>$ ./nc info pg15</font>
+   <font size=+1>$ ./nodectl info pg15</font>
 
       <b>  Project:</b> pg (http://postgresql.org)
       <b>Component:</b> pg15  15.1 (Linux amd64 & arm64, OSX)
@@ -117,7 +117,7 @@ The <code>info</code> command lists information about the OS or a component
 that only the core<br> Postgres server component, in this case <code>pg15</code>, is installed
 and enabled by default.
 <pre>
-   <font size=+1>$ ./nc list</font>
+   <font size=+1>$ ./nodectl list</font>
 
         <b>Component     Version       Port    Status      
         ------------  ------------  ------  ------------</b>
@@ -129,7 +129,7 @@ and enabled by default.
 The <code>status</code> command confirms whether server components are listening on
 their assigned ports.
 <pre>     
-   <font size=+1>$ ./nc status</font>
+   <font size=+1>$ ./nodectl status</font>
 
        pg15    stopped on port 5432
 </pre>
@@ -137,7 +137,7 @@ their assigned ports.
 <br>
 The <code>start</code> command will start up whatever servers are installed (in this case pg14)
 <pre>     
-   <font size=+1>$ ./nc start</font>
+   <font size=+1>$ ./nodectl start</font>
 
        pg15 starting...
 </pre>
@@ -145,14 +145,14 @@ The <code>start</code> command will start up whatever servers are installed (in 
 <br>
 Running the <code>status</code> command displays information about installed server components.
 <pre>     
-   <font size=+1>$ ./nc status</font>
+   <font size=+1>$ ./nodectl status</font>
 
        pg15 running on port 5432
 </pre>
 
 Now lets use the <code>stop</code> command to shutdown postgres.
 <pre>     
-   <font size=+1>$ ./nc stop</font>
+   <font size=+1>$ ./nodectl stop</font>
 
        pg15 stopping...
 </pre>
@@ -164,14 +164,14 @@ Use the <code>install</code> command to provision additional components such as 
 Using the "--start" option will install and then start PG with the default passwd = 'password'.  Because port 5432
 was in use, we automagically start on port 5433.
 <pre>
-   <font size=+1>$ ./nc install pg14 --start</font>
+   <font size=+1>$ ./nodectl install pg14 --start</font>
 
         Get:2 pg14-14.6-amd
           Unpacking pg14-14.6-amd.tar.bz2
           pg14 Installed & Started
 
 
-   <font size=+1>$ ./nc list</font>
+   <font size=+1>$ ./nodectl list</font>
 
         Component     Version    Port    Status      
         ------------  --------  ------  ------------
@@ -182,7 +182,7 @@ was in use, we automagically start on port 5433.
 
 We now run the status command to confirm that both the PG servers are installed.
 <pre>
-   <font size=+1>$ ./nc status</font>
+   <font size=+1>$ ./nodectl status</font>
 
         pg14 (Running on port 5433)
         pg15 (Running on port 5432)
@@ -194,7 +194,7 @@ We now run the status command to confirm that both the PG servers are installed.
     <tr><td colspan=2><img src=img/line.png height=2 width=825 />
     <tr><td colspan=2><img src=img/space.png height=2 width=1 />
     <tr>
-      <td width=412>&copy; 2023 pgEdge, Inc.&nbsp;&nbsp;All rights reserved.</td>
+      <td width=412>&copy; 2023 pgEdge, Inodectl.&nbsp;&nbsp;All rights reserved.</td>
       <td width=413 align=right>luss@pgedge.com</td>
     </tr>
   </table>
