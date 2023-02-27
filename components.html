@@ -1,0 +1,188 @@
+
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+function copyToClipboard(text) {
+    var sampleTextarea = document.createElement("textarea");
+    document.body.appendChild(sampleTextarea);
+    sampleTextarea.value = text;
+    sampleTextarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(sampleTextarea);
+}
+
+function myFunction(element){
+    var copyText = document.getElementById(element);
+    copyToClipboard(copyText.value);
+}
+</script>
+
+</head>
+
+<title>OSCG: Postgres Developer's Distro</title>
+
+<center>
+
+
+<table border=0 width=825><tr style="vertical-align:top"><td width=825>
+
+  <table border=0 width=825 cellpadding=2>
+    <tr><td>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://oscg.io"><img src=img/oscg-bigsql-logo.png height=50 width=50 /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <a class="nav-link" href=index.html>Download & Usage</a>
+            <a class="nav-link active" aria-current="page" href=components.html>Components</a>
+            <a class="nav-link" href=tutorial.html>Tutorial</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    </td></tr>
+    <tr><td><img src=img/spacer.png height=3></td></tr>
+    <tr><td></td></tr>
+  </table>
+
+<img src=img/spacer.png height=3 \>
+
+
+<table border=0 cellpadding=3 bgcolor=white width=" + str(pWidth) + " cellpadding=0 >
+  <tr><td> 
+STELTHY-IO is an Open Source cross-platform installation, configuration & operations framework for Postgres.  It is optimized for Developers to run in sandboxes, vm's or the container of your choice.  Take a look below at the extensive collection of enterprise-class community extensions we embrace.  Viva Postgres Community!!
+  </td></tr>
+</table>
+
+<img src=img/spacer.png height=8 \>
+
+
+<p>
+<table cellpadding=3 width=825 border=0 bgcolor=whitesmoke cellpadding=1>
+
+<tr><td colspan=4><br><b><font size=+1>Rock-solid Postgres</font></b></td></tr>
+<tr>
+  <td width=65>&nbsp;&nbsp;<img width=50 height=50 src=img/postgresql.png /></td>
+
+  <td width=92><font size=3><a href=https://github.com/postgres/postgres/tags>v15.2</a>&nbsp;<font color=red size=-1><sup>9-Feb</sup></font><br><font size=-1>New in <a href=https://www.postgresql.org/docs/15/release-15.html>2022</a></font></td>
+
+  <td width=92><font size=3><a href=https://github.com/postgres/postgres/tags>v14.7</a>&nbsp;<font color=red size=-1><sup>9-Feb</sup></font><br><font size=-1>New in <a href=https://www.postgresql.org/docs/14/release-14.html>2021</a></font></td>
+
+  <td width=92><font size=3><a href=https://github.com/postgres/postgres/tags>v13.10</a>&nbsp;<font color=red size=-1><sup>9-Feb</sup></font><br><font size=-1>New in <a href=https://www.postgresql.org/docs/13/release-13.html>2020</a></font></td>
+
+  <td width=92><font size=3><a href=https://github.com/postgres/postgres/tags>v12.14</a>&nbsp;<font color=red size=-1><sup>9-Feb</sup></font><br><font size=-1>New in <a href=https://www.postgresql.org/docs/12/release-12.html>2019</a></font></td>
+
+  <td width=92><font size=3><a href=https://github.com/postgres/postgres/tags>v11.19</a>&nbsp;<font color=red size=-1><sup>9-Feb</sup></font><br><font size=-1>New in <a href=https://www.postgresql.org/docs/11/release-11.html>2018</a></font></td>
+
+
+</tr></table>
+
+<table cellpadding=3 width=825 border=0 bgcolor=whitesmoke cellpadding=1>
+<tr><td colspan=4><br><b><font size=+1>Postgres Community Extensions & Apps</font></b></td></tr>
+<tr>
+  <td width=30>&nbsp;<img src=img/citus.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/citusdata/citus>Citus</a>&nbsp;&nbsp;<a href=https://github.com/citusdata/citus/releases>v11.2.0</a>&nbsp;<font color=red size=-1><sup><a href=https://github.com/citusdata/citus/releases/tag/v11.2.0>6-Feb</a></sup></font><br><i>Sharded PostgreSQL</i></td>
+
+  <td width=30>&nbsp;<img src=img/postgis.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=http://postgis.net>PostGIS</a>&nbsp;&nbsp;<a href=http://postgis.net/source>v3.3.2</a>&nbsp;<font color=red size=-1><sup><a href=https://git.osgeo.org/gitea/postgis/postgis/raw/tag/3.3.2/NEWS>12-Nov</a></sup></font><br><i>Spatial Extensions</i></td>
+
+  <td width=30>&nbsp;<img src=img/pgpool2.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=http://pgpool.net>pgPool2</a>&nbsp;&nbsp;<a href=http://github.com/pgpool/pgpool2/tags>v4.4.2</a>&nbsp;<font color=red size=-1><sup>6-Jan</sup></font><br><i>Query Cache & Pooler</i></td>
+
+<tr>
+  <td width=30>&nbsp;<img src=img/larry.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/orafce/orafce#orafce---oracles-compatibility-functions-and-packages>OraFCE</a>&nbsp;&nbsp;<a href=https://github.com/orafce/orafce/releases>v4.1.1</a>&nbsp;<font color=red size=-1><sup>27-Jan</sup></font><br><i>Ora Built-in Packages</i></td>
+
+  <td width=30>&nbsp;<img src=img/repack.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/reorg/pg_repack>pgRepack</a>&nbsp;&nbsp;<a href=https://github.com/reorg/pg_repack/tags>v1.4.8</a>&nbsp;<font color=red size=-1><sup>19-Oct</sup></font><br><i>Remove Table/Index Bloat</i></td>
+
+  <td width=30>&nbsp;<img src=img/partman.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/pgpartman/pg_partman#pg-partition-manager>pgPartman</a>&nbsp;&nbsp;<a href=https://github.com/pgpartman/pg_partman/tags>v4.7.2</a>&nbsp;<font color=red size=-1><sup>22-Dec</sup></font><br><i>Partition Managemnt</i></td>
+
+</tr>
+<tr>
+
+  <td width=30>&nbsp;<img src=img/audit.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/pgaudit/pgaudit>pgAudit</a>&nbsp;&nbsp;<a href=https://github.com/pgaudit/pgaudit/releases>v1.7.0</a>&nbsp;<font color=red size=-1><sup><a href=https://github.com/pgaudit/pgaudit/releases/tag/1.7.0>13-Jun</a></sup></font><br><i>Audit Logging</i></td>
+
+  <td width=30>&nbsp;<img src=img/cron.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/citusdata/pg_cron>pgCron</a>&nbsp;&nbsp;<a href=https://github.com/citusdata/pg_cron/releases>v1.5.1</a>&nbsp;<font color=red size=-1><sup>15-Feb</sup></font><br><i>Background Job Scheduler</i></td>
+
+  <td width=30>&nbsp;<img src=img/anon.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://gitlab.com/dalibo/postgresql_anonymizer/blob/master/README.md>Anonymizer</a>&nbsp;&nbsp;<a href=https://gitlab.com/dalibo/postgresql_anonymizer/-/tags>v1.1.0</a>&nbsp;<font color=red size=-1><sup>29-Sep</sup></font><br><i>Anonymization & Masking</i></td>
+
+</tr>
+<tr>
+
+  <td width=30>&nbsp;<img src=img/whatif.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://hypopg.readthedocs.io/en/latest/>HypoPG</a>&nbsp;&nbsp;<a href=https://github.com/HypoPG/hypopg/releases>v1.3.1</a>&nbsp;<font color=red size=-1><sup>22-Jun-21</sup></font><br><i>Hypothetical Indexes</i></td>
+
+  <td width=30>&nbsp;<img src=img/oracle_fdw.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/laurenz/oracle_fdw>OracleFDW</a>&nbsp;&nbsp;<a href=https://github.com/laurenz/oracle_fdw/tags>v2.4.0</a>&nbsp;<font color=red size=-1><sup><a href=https://github.com/laurenz/oracle_fdw/releases/tag/ORACLE_FDW_2_4_0>23-Sep-21</a></sup></font><br><i>Oracle from PG</i></td>
+
+  <td width=30>&nbsp;<img src=img/hintplan.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/ossc-db/pg_hint_plan>pgHintPlan</a>&nbsp;&nbsp;<a href=https://github.com/ossc-db/pg_hint_plan/tags>v1.5.0</a>&nbsp;<font color=red size=-1><sup><a href=https://github.com/ossc-db/pg_hint_plan/releases>20-Jan</a></sup></font><br><i>Execution Plan Hints</i></td>
+</tr>
+
+<tr><td colspan=4><br><b><font size=+1>Data Integration</font></b></td></tr>
+<tr>
+  <td width=30>&nbsp;<img src=img/multicorn.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=http://multicorn2.org>Multicorn2</a>&nbsp;&nbsp;<a href=https://github.com/pgsql-io/multicorn2/tags>v2.4</a>&nbsp;<font color=red size=-1><sup>9-Sep</sup></font><br><i>Python FDW Library</i></td>
+
+  <td width=30>&nbsp;<img src=img/mongodb.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/EnterpriseDB/mongo_fdw#mongo_fdw>MongoFDW</a>&nbsp;&nbsp;<a href=https://github.com/EnterpriseDB/mongo_fdw/tags>v5.4.0</a>&nbsp;<font color=red size=-1><sup>19-May</sup></font><br><i>MongoDB from PG</i></td>
+
+  <td width=30>&nbsp;<img src=img/bigquery.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://pypi.org/project/bigquery-fdw>BigQueryFDW</a>&nbsp;&nbsp;<a href=https://pypi.org/project/bigquery-fdw/#history>v2.1</a>&nbsp;<font color=red size=-1><sup>13-Sep</sup></font><br><i>BigQuery from PG</i></td>
+
+</tr>
+<tr>
+  <td width=30>&nbsp;<img src=img/mysql.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/EnterpriseDb/mysql_fdw>MySQL FDW</a>&nbsp;&nbsp;<a href=https://github.com/EnterpriseDB/mysql_fdw/tags>v2.8.0</a>&nbsp;<font color=red size=-1><sup>16-May</sup></font><br><i>MySQL & MariaDB from PG</i></td>
+
+  <td width=30>&nbsp;<img src=img/tds.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/tds-fdw/tds_fdw/#tds-foreign-data-wrapper>TDS FDW</a>&nbsp;&nbsp;<a href=https://github.com/tds-fdw/tds_fdw/tags>v2.0.3</a>&nbsp;<font color=red size=-1><sup><a href=https://github.com/tds-fdw/tds_fdw/releases/tag/v2.0.3>21-Oct</a></sup></font><br><i>SQL Svr & Sybase from PG</i></td>
+
+  <td width=30>&nbsp;<img src=img/esfdw.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://pypi.org/project/pg-es-fdw/>ElasticSearchFDW</a>&nbsp;&nbsp;<a href=https://pypi.org/project/pg-es-fdw/#history>v0.11.2</a>&nbsp;<font color=red size=-1><sup>18-Sep</sup></font><br><i>ElasticSearch from PG</i></td>
+
+</tr>
+
+<tr><td colspan=4><br><b><font size=+1>Database Developers</font></b></td></tr>
+<tr>
+  <td width=30>&nbsp;<img src=img/plprofiler.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/bigsql/plprofiler#plprofiler>PL/Profiler</a>&nbsp;&nbsp;<a href=https://github.com/bigsql/plprofiler/tags>v4.2</a>&nbsp;<font color=red size=-1><sup>03-Oct</sup></font><br><i>Stored Procedure Profiler</i></td>
+
+  <td width=30>&nbsp;<img src=img/debugger.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/EnterpriseDB/pldebugger>PL/Debugger</a>&nbsp;&nbsp;<a href=https://github.com/EnterpriseDB/pldebugger/tags>v1.5</a>&nbsp;<font color=red size=-1><sup>20-Jul</sup></font><br><i>Stored Procedure Debugger</i></td>
+
+  <td width=30>&nbsp;<img src=img/v8.png height=30 width=30 /></td>
+  <td width=275><font size=3><a href=https://github.com/plv8/plv8>PL/V8</a>&nbsp;&nbsp;<a href=https://github.com/plv8/plv8/tags>v2.3.15</a>&nbsp;<font color=red size=-1><sup>11-Jul-20</sup></font><br><i>Javascript Stored Procedures</i></td>
+
+
+</td></tr></table></center>
+
+
+  <table width=825>
+    <tr><td colspan=2>&nbsp;</td></tr>
+    <tr><td colspan=2><img src=img/line.png height=2 width=825 />
+    <tr><td colspan=2><img src=img/space.png height=2 width=1 />
+    <tr>
+      <td width=412>&copy; 2023 Stealth Technology Corp.&nbsp;&nbsp;All rights reserved.</td>
+      <td width=413 align=right>luss@stelthy.io</td>
+    </tr>
+  </table>
+
+  </td><td></td>
+</tr></table>
+

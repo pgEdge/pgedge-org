@@ -1,0 +1,121 @@
+
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+function copyToClipboard(text) {
+    var sampleTextarea = document.createElement("textarea");
+    document.body.appendChild(sampleTextarea);
+    sampleTextarea.value = text;
+    sampleTextarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(sampleTextarea);
+}
+
+function myFunction(element){
+    var copyText = document.getElementById(element);
+    copyToClipboard(copyText.value);
+}
+</script>
+
+</head>
+
+<title>OSCG: Postgres Developer's Distro</title>
+
+<center>
+
+
+<table border=0 width=825><tr style="vertical-align:top"><td width=825>
+
+  <table border=0 width=825 cellpadding=2>
+    <tr><td>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://oscg.io"><img src=img/oscg-bigsql-logo.png height=50 width=50 /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <a class="nav-link active" aria-current="page" href=index.html>Download & Usage</a>
+            <a class="nav-link" href=components.html>Components</a>
+            <a class="nav-link" href=tutorial.html>Tutorial</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    </td></tr>
+    <tr><td><img src=img/spacer.png height=3></td></tr>
+    <tr><td>
+    <table width=825 cellpadding=1 border=0>
+
+      <tr><td width=130><img src=img/usage.png height=40 width=125 /></td>
+          <td width=360><h4><font color=black><i>Download & Usage</i></font></h4></td>
+          <td></td>
+
+      </tr>
+     </table>
+   </td></tr>
+  </table>
+
+<img src=img/spacer.png height=3 \>
+
+<center><img src=img/op-systems1.png /><p></center>
+
+
+<p>Our sandboxed environment is perfect for running in a container, on bare metal,
+or in the cloud environment of your choice.
+Our optimized and secure static binaries run on 
+<nobr>EL8+,</nobr> <nobr>Ubuntu 20.04+</nobr>, <nobr>Debian 10+</nobr>
+
+
+<p>&nbsp;
+<table border=0 style='font-size:85%'>
+<tr><td width=220 align=right><b>Installation:</b></td>
+    <td width=375><input id=download type='text' size=78
+      value = 'python3 -c "$(curl -fsSL https://stelthy-download.s3.amazonaws.com/REPO/install.py)"' readonly='readonly' />
+    </td>
+    <td width=50><button onclick="myFunction('download')">Copy</button></td>
+</tr>
+<tr><td colspan=3>&nbsp;</td></tr>
+<tr><td width=200 align=right><p><b>Usage sample:</b></td>
+    <td width=375><input id=sample type='text' size=78
+      value='cd oscg; ./nc install pg14 --start' readonly='readonly' />
+    </td>
+    <td width=50><button onclick="myFunction('sample')">Copy</button></td>
+</tr>
+</table>
+
+<p>&nbsp;
+<table bgcolor=whitesmoke><tr><td>
+<h4>Usage Notes:</h4>
+<ul>
+  <li>Install as a non-root user from your $HOME directory<br>&nbsp;</li>
+  <li>Checkout our <a href="tutorial.html">tutorial</a> for more info on
+      how to use the <code>nc</code> (nodectl) CLI<br>&nbsp;</li>
+  <li>We are tested with Python Python 3.6+<br>&nbsp;
+  </li>
+</ul>
+
+</td></tr></table>
+
+
+  <table width=825>
+    <tr><td colspan=2>&nbsp;</td></tr>
+    <tr><td colspan=2><img src=img/line.png height=2 width=825 />
+    <tr><td colspan=2><img src=img/space.png height=2 width=1 />
+    <tr>
+      <td width=412>&copy; 2023 Stealth Technology Corp.&nbsp;&nbsp;All rights reserved.</td>
+      <td width=413 align=right>luss@stelthy.io</td>
+    </tr>
+  </table>
+
+  </td><td></td>
+</tr></table>
+
