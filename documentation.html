@@ -55,9 +55,9 @@ function myFunction(element){
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
 
-            <a class="nav-link active" aria-current="page" href=index.html>Download & Usage</a>
+            <a class="nav-link" href=index.html>Download & Usage</a>
             <a class="nav-link" href=components.html>Components</a>
-            <a class="nav-link" href=documentation.html>Documentation</a>
+            <a class="nav-link active" aria-current="page" href="documentation.html">Documentation</a>
             <a class="nav-link" href="https://pgedge.com/company">About Us</a>
 
           </div>
@@ -67,11 +67,6 @@ function myFunction(element){
     </td></tr>
     <tr><td><img src=img/spacer.png height=3></td></tr>
     <tr><td>
-    <table width=825 cellpadding=1 border=0>
-
-      <tr><td width=130><img src=img/usage.png height=40 width=125 /></td>
-          <td width=360><h4><font color=black><i>Download & Usage</i></font></h4></td>
-          <td></td>
 
       </tr>
      </table>
@@ -85,54 +80,22 @@ function myFunction(element){
 
 <img src=img/spacer.png height=3 \>
 
-<center><img src=img/op-systems2.png /><p></center>
+<table width=1000>
+<td width=820>
+ <h2>pgEdge Platform Documentation</h2>
+ <p>&nbsp;
+ <h3>NodeCTL Command Line Interface</h3>
+ <ul>
+	 <li><h4><a href="https://pgedge.github.io/platform-doc/cli/UM-README.html">Update Manager</a><h4></li>
+	 <li><h4><a href="https://pgedge.github.io/platform-doc/cli/SERVICE-README.html">Service Controller</a><h4></li>
+	 <li><h4><a href="https://pgedge.github.io/platform-doc/cli/SPOCK-README.html">Replication Controller (Spock)</a><h4></li>
+	 <li><h4><a href="https://pgedge.github.io/platform-doc/cli/CLUSTER-README.html">Localhost Cluster Manager</a><h4></li>
+ </ul>
 
-<table width=1025 border=0 cellpadding=4>
-<tr><td width=825>
+</td>
+<td width=180 valign=top>
 
-<table width=825><tr><td>
-
-<a href="https://pgedge.com/products/pgedge-platform">pgEdge Platform</a> is an open and community licensed installation, configuration & operations framework for distributed PostgreSQL. <a href="https://pgedge.com/products/what-is-pgedge">pgEdge Distributed PostgreSQL</a> is a fully distributed database based on standard Postgres. It supports multi-active (multi-master) asynchronous logical replication with conflict resolution and delta conflict avoidance, via the pgEdge-developed Spock extension. It is optimized to run in sandboxes, virtual machines or the container of your choice. You’ll also have access to an extensive collection of enterprise-class community extensions we embrace. Viva Postgres Community!
-<p>
-<p>Our optimized and secure static binaries run on popular amd64 & arm64 Linux platforms including
-<nobr>EL8+,</nobr> <nobr>Ubuntu 20.04+</nobr>, <nobr>Debian 10+</nobr>.  
-We also support OSX arm64 as a development environment.</nobr>
-</td></tr></table>
-
-
-<p>&nbsp;
-<table border=0 style='font-size:85%'>
-<tr><td width=220 align=right><b>Installation:</b></td>
-    <td width=375><input id=download type='text' size=78
-      value = 'python3 -c "$(curl -fsSL https://pgedge-download.s3.amazonaws.com/REPO/install.py)"' readonly='readonly' />
-    </td>
-    <td width=50><button onclick="myFunction('download')">Copy</button></td>
-</tr>
-<tr><td colspan=3>&nbsp;</td></tr>
-<tr><td width=200 align=right><p><b>Usage sample:</b></td>
-    <td width=375><input id=sample type='text' size=78
-      value='cd pgedge; ./nodectl spock install -U user -P passwd -d mydb --with-postgrest' />
-    </td>
-    <td width=50><button onclick="myFunction('sample')">Copy</button></td>
-</tr>
-</table>
-
-<p>&nbsp;
-<table bgcolor=whitesmoke width=822><tr><td>
-<h4>Usage Notes:</h4>
-<ul>
-  <li>Install as a non-root user from your $HOME directory<br>&nbsp;</li>
-  <li>Checkout our <a href="tutorial.html">Getting Started Guide</a> for more info on
-          how to use the <code>nodectl</code> CLI<br>&nbsp;</li>
-  <li>We are tested with Python 3.6+<br>&nbsp;
-  </li>
-</ul>
-</td></tr></table>
-
-
-<td valign=top>
-
-  <table background= img/banner-background.png width=180 height=525>
+<table background= img/banner-background.png width=180 height=400>
     <tr><td>
   
 <h3>pgEdge, Inc.</h3>
@@ -142,7 +105,9 @@ We also support OSX arm64 as a development environment.</nobr>
 
   </table>
 
-</td></tr></table>
+</td></tr>
+
+</table>
 
 <p>&nbsp;
   <table width=1025>

@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Restricted Access"
-AuthUserFile /var/www/htpwd
-Require user pgedge
